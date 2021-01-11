@@ -1,0 +1,131 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+body{
+    padding: 0;
+    font-family: Kumbh Sans, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main{
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.pattern_top{
+    object-fit: contain;
+    position: absolute;
+    left: -100px;
+    width: 50vw;
+    top: -300px;
+}
+.pattern_bottom{
+    object-fit: contain;
+    position: absolute;
+    right: -100px;
+    width: 50vw;
+    bottom: -400px;
+}
+.cardTop{
+    background: url('./images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 130px;
+}
+
+.card{
+    width: 20rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+}
+.cardBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightblue; */
+}
+.avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 4rem;
+    margin-top: -3.2rem;
+    border: 7px solid white
+}
+.centerDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.centerDiv > h4{
+    margin: 0;
+    color:rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    font-weight: bold;
+}
+/* hsl(0, 0%, 59%) */
+.centerDiv > h4 > span{
+    font-weight: 400;
+    color:hsl(0, 0%, 59%)
+}
+#place{
+    font-weight: 300;
+    margin-top: 10px;
+    color:hsl(0, 0%, 59%)
+}
+.bottomDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: solid lightgray 1px;
+    /* background-color: brown; */
+    padding-top: 20px;
+}
+
+.stats{
+    /* background-color: lightblue; */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.stats >h4{
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+.stats >p{
+    color:hsl(0, 0%, 59%);
+    margin-top: 1px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media(max-width: 698px){
+    .pattern_top{
+        display: none;
+    }
+    .pattern_bottom{
+        display: none;
+    }
+}
